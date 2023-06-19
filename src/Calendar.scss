@@ -1,0 +1,107 @@
+.Calendar__grid {
+  position: relative;
+  .fc-media-screen {
+    background-color: #fff;
+    border-radius: 8px;
+    .fc-prev-button,
+    .fc-next-button {
+      background-color: #fff;
+      color: #919eab;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .fc-toolbar-chunk {
+      display: flex;
+    }
+
+    .fc-header-toolbar {
+      padding: 20px 24px;
+      margin-bottom: 0;
+      border: 1px solid #ddd;
+    }
+
+    .fc-toolbar-title {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .fc-col-header-cell {
+      border-bottom: none;
+    }
+
+    .fc-col-header-cell-cushion {
+      text-transform: uppercase;
+      color: inherit;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .fc-daygrid-day {
+      height: 100px;
+    }
+
+    .fc-daygrid-day-top {
+      justify-content: center;
+    }
+
+    .fc-daygrid-day-number {
+      color: inherit;
+      font-size: 12px;
+      text-decoration: none;
+      margin-top: 8px;
+      padding: 4px 6px;
+    }
+
+    .fc-day-other {
+      background-color: #f9fafb;
+      color: #8c9196;
+    }
+
+    .fc-day-today {
+      .fc-daygrid-day-number {
+        background-color: #3540a2;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+
+    .fc-daygrid-event-harness {
+      border-radius: 3px;
+      margin: 0 10px;
+    }
+
+    .fc-daygrid-event {
+      border: none;
+      background: none;
+      padding: 0;
+      .EventInfo {
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 5px 0 5px 10px;
+        cursor: pointer;
+        background-color: #fbf4ce;
+        border-right: 10px solid #fbf4ce;
+        .EventInfo__title {
+          color: #202223;
+          font-size: 14px;
+        }
+
+        .EventInfo__status {
+          font-size: 12px;
+          text-transform: capitalize;
+          color: #f91a12;
+        }
+      }
+    }
+
+    .fc-popover-body {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  }
+}
